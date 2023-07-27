@@ -1,0 +1,75 @@
+/*!
+ * <%= title %> v<%= version %> Print Stylesheet
+ * Docs & License: <%= homepage %>
+ * (c) <%= copyright %>
+ */
+
+/*
+ * Include this stylesheet on your page to get a more printer-friendly calendar.
+ * When including this stylesheet, use the media='print' attribute of the <link> tag.
+ * Make sure to include this stylesheet IN ADDITION to the regular fullcalendar.css.
+ */
+
+ /*!
+ * FullCalendar v2.9.1 Stylesheet
+ * Docs & License: http://fullcalendar.io/
+ * (c) 2016 Adam Shaw
+ */
+
+@media print {
+  body, html, #wrapper {
+   width: 100%;
+  }
+  div {
+   overflow: visible !important;      
+  }
+
+  .fc-event {
+  background: #fff !important;
+  color: #000 !important;
+  }
+  
+/* for vertical events */
+  
+  .fc-event-bg {
+    display: none !important;
+  }
+  
+  .fc-event .ui-resizable-handle {
+    display: none !important;
+  }
+
+  .red_inspection{
+    background-color: rgba(245, 25, 25, 0.278431) !important;
+    border: 1px solid red;
+    color: rgb(71, 40, 40) !important;
+  }
+  .green_attention{
+    background-color: rgba(112, 204, 134, 0.278431) !important;
+    border: 1px solid green;
+    color: green !important;
+  }
+
+  .fc-view-agendaWeek .fc-agenda-slots tr {
+    height: 4pc !important;
+  }  
+  .fc-view-agendaWeek .fc-widget-header{
+    height: 40px !important;
+  }
+
+  .fc-view-agendaWeek .fc-agenda-days {
+    height: 900px;
+  }
+
+  .fc-header-left{
+    display: none !important
+  }
+  .fc-header-right{
+    display: none !important
+  }
+
+  .fc-event-title{
+    font-size: 10px !important
+  }
+}
+
